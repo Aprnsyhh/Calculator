@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Mix Parlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Kalkulator Mix Parlay</h1>
+            <div id="pertandingan-list">
+            </div>
+            <div class="button-group">
+                <button id="tambah-pertandingan">Tambah Pertandingan</button>
+                <button id="kurangi-pertandingan">Kurangi Pertandingan</button>
+            </div>
+            <div class="input-group">
+                <label for="taruhan">Jumlah Taruhan:</label>
+                <input type="number" id="taruhan" value="10000" min="1000" step="1000">
+            </div>
+            <div class="result-box">
+                <h2>Hasil Perhitungan</h2>
+                <p>Total Odds: <span id="total-odds">0.00</span></p>
+                <p>Potensi Kemenangan: <span id="kemenangan">0.00</span></p>
+                <p id="peringatan"></p>
+            </div>
+        </div>
+
+        <div class="catatan-box">
+            <a href="https://tinyurl.com/joker338-vip">
+                <img src="https://square-dream-b10f.galerijoker.workers.dev/assets/Logo.png" alt="JOKER338" class="brand-logo">
+            </a>
+            <marquee behavior="scroll" direction="left">Selamat datang di kalkulator Mix Parlay JOKER338, hitung potensi kemenangan Anda!</marquee>
+            <h2>Catatan</h2>
+            <p>Jika menang full, hitungannya akan menjadi sama dengan Odds</p>
+            <p>Jika menang setengah, hitungannya (Odds-1)/2 +1</p>
+            <p>Jika kalah setengah, hitungannya menjadi tetap 0.5</p>
+            <p>Jika seri, hitungannya akan menjadi tetap 1 atau tidak dihitung</p>
+            <h2>Rumus</h2>
+            <p>Rumus Mix Parlay=(Hasil Perkalian Odds x Jumlah Betting) - Jumlah Betting.</p>
+            <p>Jika hasil minus, Anda kalah sejumlah hasil yang dikeluarkan.</p>
+            <p>Jika hasil plus, Anda menang sejumlah hasil yang dikeluarkan.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
